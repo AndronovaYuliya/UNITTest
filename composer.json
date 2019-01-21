@@ -1,0 +1,13 @@
+{
+    "name": "phpstudent/unit-test",
+    "authors": [
+        {
+            "name": "Andronova Yuliya",
+            "email": "andron39933993@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    }
+}
