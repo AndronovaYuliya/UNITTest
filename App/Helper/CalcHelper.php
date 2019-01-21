@@ -6,6 +6,11 @@ use InvalidArgumentException;
 
 class CalcHelper
 {
+    /**
+     * @param int $a
+     * @param int $b
+     * @return int
+     */
     public function multiply(int $a, int $b): int
     {
         return $a * $b;

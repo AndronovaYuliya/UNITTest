@@ -22,7 +22,10 @@ class CalcHelperTest extends TestCase
      */
     public $calc;
 
-    public function setUp()
+    /**
+     * @return void
+     */
+    public function setUp():void
     {
         $this->calc=new CalcHelper();
     }
@@ -45,6 +48,9 @@ class CalcHelperTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
+    /**
+     * @return void
+     */
     public function testDivideIsCorrect():void
     {
         $result=$this->calc->divide(20,5);
@@ -52,6 +58,9 @@ class CalcHelperTest extends TestCase
         $this->assertEquals(4, $result);
     }
 
+    /**
+     * @return void
+     */
     public function testDivideByZero():void
     {
         $this->expectException(InvalidArgumentException::class);
@@ -59,6 +68,9 @@ class CalcHelperTest extends TestCase
         $this->calc->divide(2,0);
     }
 
+    /**
+     * @return array
+     */
     public function multiProvider():array
     {
         return [

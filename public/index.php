@@ -2,9 +2,9 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-/*use App\Helper\CalcHelper;
+use App\Helper\CalcHelper;
 
-$calc = new CalcHelper();
+/*$calc = new CalcHelper();
 
 $a = $argv[1];
 $b = $argv[2];
@@ -19,7 +19,7 @@ try {
 
 use App\Helper\PhysicsHelper;
 
-$physics=new PhysicsHelper();
+$physics=new PhysicsHelper(new CalcHelper());
 $a = $argv[1];
 
 echo 'Light will travel: '.$physics->getLightPath($a);
